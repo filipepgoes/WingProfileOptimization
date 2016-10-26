@@ -1,0 +1,76 @@
+function p = optionsList(choice)
+%OPTIONSLIST List of all GA and PS options.
+
+%   Copyright 2003-2005 The MathWorks, Inc.
+%   $Revision: 1.4.4.3 $  $Date: 2005/05/31 16:30:02 $
+
+p = [];
+switch lower(choice)
+    case 'ga'
+        p = {
+            'PopulationType'
+            'PopInitRange'
+            'PopulationSize'
+            'EliteCount'
+            'CrossoverFraction'
+            'MigrationDirection'
+            'MigrationInterval'
+            'MigrationFraction'
+            'Generations'
+            'TimeLimit'
+            'FitnessLimit'
+            'StallGenLimit'
+            'StallTimeLimit'
+            'TolFun'
+            'TolCon'
+            'InitialPopulation'
+            'InitialScores'
+            'InitialPenalty'
+            'PenaltyFactor'
+            'PlotInterval'
+            'FitnessScalingFcn'
+            'SelectionFcn'
+            'CrossoverFcn'
+            'MutationFcn'
+            'Display'
+            'PlotFcns'
+            'OutputFcns'
+            'CreationFcn'
+            'HybridFcn'
+            'Vectorized'
+        };
+        
+    case 'ps'
+        p = {
+            'TolMesh'
+            'TolCon'
+            'TolX'
+            'TolFun'
+            'TolBind'
+            'MaxIter'
+            'TimeLimit'
+            'MaxFunEvals'
+            'MeshContraction'
+            'MeshExpansion'
+            'MeshAccelerator'
+            'MeshRotate'
+            'InitialMeshSize'
+            'InitialPenalty'
+            'PenaltyFactor'
+            'ScaleMesh'
+            'MaxMeshSize'
+            'PollMethod'
+            'CompletePoll'
+            'PollingOrder'
+            'SearchMethod'
+            'CompleteSearch'
+            'Display'
+            'OutputFcns'
+            'PlotFcns'
+            'PlotInterval'
+            'Cache'
+            'CacheSize'
+            'CacheTol'
+            'Vectorized'
+        };
+end
